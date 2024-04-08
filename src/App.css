@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+} 
+body {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@layer components{
+    .sidebar {
+        @apply flex-[0_0_22%]
+    }
+    .trends {
+        @apply flex-[0_0_28%]
+    }
+    .timeline{
+        @apply relative flex-[0_0_50%] border-x border-[#2F3336] border-solid
+    }
+    .header{
+        @apply px-6 py-4 flex items-center justify-between border-b border-solid border-[#2F3336]
+    }
+    .top-tweets{
+        @apply w-6 h-auto
+    }
+    .page-title{
+        @apply text-2xl font-bold
+    }
+    .tweet-editor{
+        @apply flex items-start justify-start gap-[20px] px-[.3rem] py-4 border-b border-solid border-[#2F3336]
+    }
+    .avatar{
+        @apply flex-[0_0_70px]
+    }
+    .tweet-editor-form{
+        @apply flex-auto
+    }
+    .tweet-editor-input{
+        @apply h-[60] w-full border-none outline-none text-2xl bg-black text-white resize-none pt-[10px] my-[13px]
+    }
+    .tweet-editor-buttons{
+        @apply flex items-center justify-between
+    }
+    .tweet-editor-actions{
+        @apply flex items-center justify-start gap-4
+    }
+    .button{
+        @apply capitalize py-[.7rem] px-6 border-none rounded-[50px] bg-[#1D9BF0] text-white text-base w-fit h-fit
+    }
+    .tweet{
+        @apply flex justify-start items-start gap-[20px] py-6 px-4 border-b border-solid border-[#2F3336]
+    }
+    .tweet-avatar{
+        @apply flex-[0_0_70px] max-w-full max-h-[100px] rounded-full
+    }
+    .tweet-content{
+        @apply flex flex-col items-start justify-start gap-[30px] w-full
+    }
+    .tweet-body{
+        @apply flex flex-col gap-2
+    }
+    .tweet-title{
+        @apply flex justify-start items-start gap-[10px] text-base
+    }
+    .tweet-title-author{
+        @apply text-base
+    }
+    .tweet-title-details{
+        @apply text-[#6E767D]
+    }
+    .tweet-text{
+        @apply text-[#D9D9D9] text-base
+    }
+    .tweet-image{
+        @apply w-full pt-[.3rem]
+    }
+    .tweet-image{
+        @apply max-w-full h-auto rounded-[50px] border-[#2F3336] border-solid border
+    }
+    .tweet-actions{
+        @apply flex justify-center items-center gap-20 text-[gray] text-base
+    }
+    .tweet-actions svg{
+        @apply w-8 h-auto text-[#2F3336]
+    }
+    .tweet-action{
+        @apply flex items-center justify-center gap-5
+    }
+    .link{
+        @apply text-[gray] no-underline
+    }   
+}
