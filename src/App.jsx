@@ -2,24 +2,25 @@ import { Outlet } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./Components/Sidebar";
 import Trends from "./Components/Trends";
-import { TweetContext } from "./contexts/tweets";
-import json from "./data/initial-data.json";
+import { useState } from "react"
+import TweetContext from "./data/context";
+import data from "./data/initial-data.json"
 
 function App() {
-  const data = { ...json };
+  let [donnee, setData] = useState(data)
   return (
     <>
-      <TweetContext.Provider value={data}>
         <div className="sidebar">
           <Sidebar />
         </div>
         <div className="timeline">
+        <TweetContext.Provider value={[donnee, setData]}>
           <Outlet />
+        </TweetContext.Provider>
         </div>
         <div className="trends">
           <Trends />
         </div>
-      </TweetContext.Provider>
     </>
   );
 }

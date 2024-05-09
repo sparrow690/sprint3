@@ -4,12 +4,12 @@ import TweetText from "./tweet-body/Tweet-Text";
 import TweetTitle from "./tweet-body/Tweet-Title";
 import { TweetContext } from "../../../../contexts/tweets";
 
-export default function TweetBody() {
-  const tweet = useContext(TweetContext);
+export default function TweetBody({tweet}) {
+  
   return (
     <div className="tweet-body">
-      <TweetTitle />
-      <TweetText />
+      <TweetTitle  tweet={tweet}/>
+      <TweetText tweet={tweet} />
       {tweet.content.srcImage && <TweetImage image={tweet.content.srcImage} />}
     </div>
   );

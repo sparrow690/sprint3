@@ -7,7 +7,7 @@ export default function FolowList() {
   return (
     <div className="bg-[#202327] px-[2vw] w-[90%] rounded-[30px] m-[2vh] pb-2">
       <FolowTitle />
-      {data.trends.map((e, i) => (
+      {["01","02","03","04"].map((e, i) => (
         <FolowBody key={i} data={data.tweets[i]} />
       ))}
       <a href="#" className="link text-[#005fa8]">

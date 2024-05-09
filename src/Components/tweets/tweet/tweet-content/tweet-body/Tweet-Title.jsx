@@ -4,8 +4,8 @@ import TweetTitleDetails from "./tweet-title/Tweet-Title-Details";
 import { useContext } from "react";
 import { TweetContext } from "../../../../../contexts/tweets";
 
-export default function TweetTitle() {
-  const tweet = useContext(TweetContext);
+export default function TweetTitle({tweet}) {
+
   return (
     <Link to={`/${tweet.user.userName}`} className="tweet-title link">
       <TweetTitleAuthor name={tweet.user.name} />

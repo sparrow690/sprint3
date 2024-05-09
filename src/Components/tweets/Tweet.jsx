@@ -5,10 +5,10 @@ import TweetContent from "./tweet/Tweet-Content";
 export default function Tweet({ data }) {
   return (
     <div className="tweet">
-      <TweetContext.Provider value={data}>
-        <TweetAvatar />
-        <TweetContent />
-      </TweetContext.Provider>
+     
+        <TweetAvatar tweet={data} />
+        <TweetContent tweet={data} />
+     
     </div>
   );
 }

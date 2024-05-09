@@ -4,12 +4,11 @@ import Like from "../../../../icons/Like";
 import Retweet from "../../../../icons/Retweet";
 import Share from "../../../../icons/Share";
 import TweetAction from "./tweet-actions/Tweet-Action";
-import { TweetContext } from "../../../../contexts/tweets";
 
-export default function TweetActions() {
+export default function TweetActions({tweet}) {
   const [state, setState] = useState(Array(4).fill(false));
   const [action, setAction] = useState(Array(4).fill(true));
-  const tweet = useContext(TweetContext);
+  
   const verify = (i) => {
     const newSvg = state.slice();
     newSvg[i] = !newSvg[i];

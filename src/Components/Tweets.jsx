@@ -1,11 +1,19 @@
+
+import TweetContext from "../data/context";
+import { useContext } from "react";
 import Tweet from "./tweets/Tweet";
 
-export default function Tweets({ tweets }) {
+export default function Tweets() {
+  let [donnee, setData] = useContext(TweetContext)
+  let tweets= donnee.tweets
   return (
-    <div className="tweets">
-      {tweets.map((e, i) => (
-        <Tweet key={i} data={e} />
-      ))}
+    <div>
+      {tweets.map((tweet, i)=>{
+        return(
+        <Tweet key={i} data={tweet}/>
+      )
+      })}
     </div>
+    
   );
 }

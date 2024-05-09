@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Profile from "./pages/Profile.jsx";
 import Timeline from "./pages/Timeline.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +19,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );

@@ -6,7 +6,7 @@
         "src": "/Avatars/Profile-Photo.png"
     },
     "tweets" : [
-        {
+        {  "id":"01",
             "user": {
                 "name": "CNN",
                 "userName": "cnn",
@@ -22,7 +22,7 @@
                 "like": "184"
             }
         },
-        {
+        {    "id":"02",
             "user": {
                 "name": "The New York Times",
                 "userName": "nytimes",
@@ -39,7 +39,7 @@
                 "like": "482"
             }
         },
-        {
+        {    "id":"03",
             "user": {
                 "name": "Twitter",
                 "userName": "twitter",
@@ -55,7 +55,7 @@
                 "like": "267.1k"
             }
         },
-        {
+        {     "id":"04",
             "user": {
                 "name": "Twitter",
                 "userName": "twitter",
@@ -71,7 +71,7 @@
                 "like": "3.3k"
             }
         },
-        {
+        {    "id":"05",
             "user": {
                 "name": "Twitter",
                 "userName": "twitter",
@@ -90,49 +90,48 @@
         }
     ],
     "nav" : [
-        {
-            "logoAfter" : "public/Icons/Twitter.svg"
+        {   "id":"1",
+            "logoAfter" : "/Icons/Twitter.svg"
         },
-        {
-            "logoAfter" : "public/Icons/Home.svg",
+        {   "id":"2",
+            "logoAfter" : "/Icons/Home.svg",
             "text": "Home",
             "path":"/"
         },
-        {
-            "logoAfter" : "public/Icons/Explore.svg",
+        {   "id":"3",
+            "logoAfter" : "/Icons/Explore.svg",
             "text": "Explore",
             "path":"/"
         },
-        {
-            "logoAfter" : "public/Icons/Notifications.svg",
+        {   "id":"4",
+            "logoAfter" : "/Icons/Notifications.svg",
             "text": "Notifications",
             "path":"/"
         },
-        {
-            "logoAfter" : "public/Icons/Messages.svg",
+        {   "id":"5",
+            "logoAfter" : "/Icons/Messages.svg",
             "text": "Messages",
             "path":"/"
         },
-        {
-            "logoAfter" : "public/Icons/Bookmarks.svg",
+        {    "id":"6",
+            "logoAfter" : "/Icons/Bookmarks.svg",
             "text": "Bookmarks",
             "path":"/"
         },
-        {
-            "logoAfter" : "/public/Icons/Lists-Fill.svg",
+        {   "id":"7",
+            "logoAfter" : "/Icons/Lists-Fill.svg",
             "text": "Lists",
             "path":"/"
         },
-        {
-            "logoAfter" : "public/Icons/Profile.svg",
+        {   "id":"8",
+            "logoAfter" : "/Icons/Profile.svg",
             "text": "Profile",
             "path":"/bradley_"
         },
-        {
-            "logoAfter" : "public/Icons/More.svg",
+        {   "id":"9",
+            "logoAfter" : "/Icons/More.svg",
             "text": "More",
             "path":"/"
         }
-    ],  
-    "trends" : ["0","1","2","3"]
+    ]
 }
